@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+:root {
+    --bg-color: white;
+    --accent-color: #7a68df; /* Accent color for the button */
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    height: 7vh;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.navbar li:last-child {
+    margin-left: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 5px transparent;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+}
+
+.contact {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact:hover {
+    background-color: #5f4fcf;
+}
+
+section {
+    height: 100vh;
+}
+
+
+#banner {
+    display: flex;
+    justify-content: center;
+    height: 83vh;
+    align-items: center; /* Center all items vertically */
+    gap: 20px; /* Fixed space between items */
+    margin: 0 auto; /* Center the banner section */
+    width: 80%; /* Adjust the width as needed */
+}
+
+.banner-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bnrcolor {
+    width: 150px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.bnrimg {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Rounded corners for the first and last child */
+.banner-item:first-child .bnrcolor {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.banner-item:last-child .bnrcolor {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Make the middle child bigger and centered */
+.banner-item:nth-child(3) .bnrcolor,
+.banner-item:nth-child(3) .bnrimg {
+    width: 200px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.banner-item:nth-child(2) .bnrcolor,
+.banner-item:nth-child(2) .bnrimg,
+.banner-item:nth-child(4) .bnrcolor,
+.banner-item:nth-child(4) .bnrimg {
+    width: 130px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.bnrcolor1 { background-color: #f1c40f; }
+.bnrcolor2 { background-color: #e74c3c; }
+.bnrcolor3 { background-color: #8e44ad; }
+.bnrcolor4 { background-color: #3498db; }
+.bnrcolor5 { background-color: #2ecc71; }
+
+.scrolldown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -50px;
+    height: 10vh;
+    text-align: center;
+}
+
+.scrolldown h3, .scrolldown i {
+    margin: 0;
+}
+
+#About {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-right h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.about-right h1 {
+    font-size: 36px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.about-right p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #555;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #3498db; /* Adjust icon color as needed */
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
+
+.about-img {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.img2 {
+    top: 20%;
+    left: 20%;
+    width: 80%;
+    height: auto;
+}
+
+.img3 {
+    top: 40%;
+    left: 40%;
+    width: 60%;
+    height: auto;
+}
