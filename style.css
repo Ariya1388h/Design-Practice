@@ -26,10 +26,6 @@ body {
     margin-bottom: 10px;
     font-family: "Noto Nastaliq Urdu", sans-serif;
 }
-    
-section {
-    height: 93vh;
-}
 
 .subtitle {
     font-size: 36px;
@@ -360,7 +356,7 @@ header {
 
 #professions {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 50px;
 }
 
 .masters-grids {
@@ -437,8 +433,9 @@ header {
   
 .events-imgs .img1, .events-imgs .img2 {
     flex: 1;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 500px;
+    padding: 0 10px;
 }
   
 .events-imgs img {
@@ -450,18 +447,21 @@ header {
 /* Teachers Section */
 
 #teachers {
-    text-align: left;
+    text-align: right;
     padding: 40px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 .teachers-left {
     flex: 1;
     padding: 20px;
     position: relative;
-    align-items: left;
+    align-items: right;
+    text-align: right;
+    direction: rtl;
 }
 
 .teachers-left p {
@@ -478,27 +478,30 @@ header {
     position: relative;
     width: 300px;
     height: 400px;
-}
-
-.teacher-img {
-    position: absolute;
+    background-image: url(assets/images/teacher/teacher.jpg);
+    background-size: cover;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.teacher-img {
+    position: absolute;
+    
+}
+
 .teacher-list {
     list-style-type: none;
-    padding-left: 0;
-    direction: ltr;
+    padding-right: 0;
+    direction: rtl;
 }
-  
+
 .teacher-list li {
     display: flex;
     align-items: center;
     font-size: 15px;
     margin-bottom: 5px;
 }
-  
+
 .teacher-list li::before {
     content: '';
     width: 10px;
@@ -506,7 +509,8 @@ header {
     background-color: #0099FF;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
 
 /* Updates Section */
@@ -643,6 +647,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px 50px;
+    height: 70vh;
 }
   
 .contact-left {
