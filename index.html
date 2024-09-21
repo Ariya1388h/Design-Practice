@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,15 +15,15 @@
         </div>
         <nav>
             <ul class="navbar">
-                <li><a href="">خانه</a></li>
-                <li><a href="">درباره</a></li>
-                <li><a href="">رویداد ها</a></li>
-                <li><a href="">دوره ها</a></li>
-                <li><a href="">معلم شوید</a></li>
+                <li><a href="#banner">خانه</a></li>
+                <li><a href="#About">درباره</a></li>
+                <li><a href="#classes">دوره ها</a></li>
+                <li><a href="#events">رویداد ها</a></li>
+                <li><a href="#teachers">معلم شو</a></li>
             </ul>
         </nav>
         <div class="contactbtn">
-            <button class="contact">ارتباط با ما</button>
+            <button class="contact" onclick="href='#About'">ارتباط با ما</button>
         </div>
     </header>
 
@@ -146,30 +147,229 @@
         <h3 class="title">حرفه های ما</h3>
         <h1 class="subtitle">استادان موسیقی ما</h1>
         <p class="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+        
         <div class="masters-grids">
             <div class="master-grid">
-                <img src="assets/images/master1.png" alt="img">
-                <h2 class="mastername">Jane Cooper</h2>
-                <span>Head of faculty, classical music</span>
+                <img src="assets/images/master1.png" alt="Jane Cooper">
+                <div class="master-content">
+                    <div class="line"></div>
+                    <h2 class="mastername">جین کوپر</h2>
+                    <span>رئیس دانشکده، موسیفی کلاسیک</span>
+                </div>
             </div>
+    
             <div class="master-grid">
-                <img src="assets/images/master1.png" alt="img">
-                <h2 class="mastername">Wade Warren</h2>
-                <span>Head of faculty, carnatic</span>
+                <img src="assets/images/master1.png" alt="Wade Warren">
+                <div class="master-content">
+                    <div class="line"></div>
+                    <h2 class="mastername">وید واررن</h2>
+                    <span>رئیس دانشکده، کارناتیک</span>
+                </div>
             </div>
+    
             <div class="master-grid">
-                <img src="assets/images/master1.png" alt="img">
-                <h2 class="mastername">Eleanar Pena</h2>
-                <span>Head of faculty, Drums</span>
+                <img src="assets/images/master1.png" alt="Eleanar Pena">
+                <div class="master-content">
+                    <div class="line"></div>
+                    <h2 class="mastername">الینار پنا</h2>
+                    <span>رئیس دانشکده، درامز</span>
+                </div>
             </div>
+    
             <div class="master-grid">
-                <img src="assets/images/master1.png" alt="img">
-                <h2 class="mastername">Kathryn Murphy</h2>
-                <span>Head of faculty, Guitar</span>
+                <img src="assets/images/master1.png" alt="Kathryn Murphy">
+                <div class="master-content">
+                    <div class="line"></div>
+                    <h2 class="mastername">کاترین مورفی</h2>
+                    <span>رئیس دانشکده، گیتار</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="video">
+
+        </div>
+    </section>
+
+    <section id="events">
+        <h3 class="title">رویداد ها</h3>
+        <h1 class="subtitle">رویداد های موسیقی ما</h1>
+        <p class="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+
+        <div class="events-imgs">
+            <div class="img1">
+                <img src="assets/images/events/img1" alt="img">
+            </div>
+            <div class="img2">
+                <img src="assets/images/events/img2" alt="img">
             </div>
         </div>
     </section>
     
+    <section id="teachers">
+        <div class="teachers-right"></div>
+            <img src="assets/images/img-teach.png" alt="img" class="teacher-img">
+        </div>
+        <div class="teachers-left">
+            <h3 class="title">برای معلمان</h3>
+            <h1 class="subtitle">چیزی را که دوست داری تدریس کن</h1>
+            <p class="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            <ul class="teacher-list">
+                <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+            </ul>
+            </div>
+    </section>
+
+    <section id="updates">
+        <h3 class="title">آخرین اخبار</h3>
+        <h1 class="subtitle">بلاگ های ما را بخوانید</h1>
+        <p class="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+        
+        <div class="blogs">
+            <div class="blog-post">
+                <div class="image-wrapper">
+                    <img src="images/assets/blog/img1" alt="img" class="blog-img">
+                    <span class="blog-date">15 March 2022</span>
+                </div>
+                <h2 class="blog-title">ارکستر وایل</h2>
+                <p class="blog-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                <a href="" class="read-more"><i class='bx bx-right-arrow-alt'></i>Read more</a>
+            </div>
+            
+            <div class="blog-post">
+                <div class="image-wrapper">
+                    <img src="images/assets/blog/img2" alt="img" class="blog-img">
+                    <span class="blog-date">15 March 2022</span>
+                </div>
+                <h2 class="blog-title">ارکستر وایل</h2>
+                <p class="blog-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                <a href="" class="read-more"><i class='bx bx-right-arrow-alt'></i>Read more</a>
+            </div>
     
+            <div class="blog-post">
+                <div class="image-wrapper">
+                    <img src="images/assets/blog/img3" alt="img" class="blog-img">
+                    <span class="blog-date">15 March 2022</span>
+                </div>
+                <h2 class="blog-title">ارکستر وایل</h2>
+                <p class="blog-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                <a href="" class="read-more"><i class='bx bx-right-arrow-alt'></i>Read more</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="impressions">
+        <h3 class="title">نظرات دانش‌آموزان</h3>
+        <h1 class="subtitle">دانش‌آموزان ما می‌گویند</h1>
+        
+        <div class="comments-boxes">
+            <div class="comment-box">
+                <div class="quote-icon">“</div>
+                <p class="comment-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                </p>
+                <div class="author-details">
+                    <h4 class="author-name">ماریا کالینز</h4>
+                    <p class="author-role">Conductor</p>
+                </div>
+            </div>
+            
+            <div class="comment-box">
+                <div class="quote-icon">“</div>
+                <p class="comment-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                </p>
+                <div class="author-details">
+                    <h4 class="author-name">ماریا کالینز</h4>
+                    <p class="author-role">Conductor</p>
+                </div>
+            </div>
+            
+            <div class="comment-box">
+                <div class="quote-icon">“</div>
+                <p class="comment-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                </p>
+                <div class="author-details">
+                    <h4 class="author-name">ماریا کالینز</h4>
+                    <p class="author-role">Conductor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-left">
+            <h3 class="title">ارتباط</h3>
+            <h1 class="subtitle">با ما در ارتباط باش</h1>
+            <p class="description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+        </div>
+        
+        <div class="contact-right">
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-row">
+                    <input type="text" name="name" placeholder="نام و نام خانوداگی" required>
+                    <input type="email" name="email" placeholder="ایمیل" required>
+                </div>
+                <textarea name="message" placeholder="پیغام" required></textarea>
+                <button type="submit" class="btn-submit">Contact Us</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="footer-section">
+            <h3>Fingure Tap</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section opening-hours">
+            <h3>ساعات کاری</h3>
+            <p>Monday: 10AM - 5PM</p>
+            <p>Tuesday: 10AM - 5PM</p>
+            <p>Wednesday: 10AM - 5PM</p>
+            <p>Thursday: 10AM - 5PM</p>
+            <p>Friday: 10AM - 5PM</p>
+            <p>Saturday: 10AM - 5PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="footer-section shortcut-links">
+            <h3>میانبر ها</h3>
+            <p><a href="#banner">خانه</a></p>
+            <p><a href="#about">درباره</a></p>
+            <p><a href="#classes">دوره ها</a></p>
+            <p><a href="#events">رویداد ها</a></p>
+            <p><a href="#teacherس">معلم شو</a></p>
+        </div>
+
+        <div class="footer-section contact-info">
+            <h3>با ما در ارتباط باش</h3>
+            <p><a href="mailto:fingertap@gmail.com">fingertap@gmail.com</a></p>
+            <p><a href="tel:+923556482077">+92 3556842077</a></p>
+            <div class="map">نقشه</div>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <h2 class="copyright">
+            All Rights Reserved CopyRight
+        </h2>
+    </section>
+
 </body>
 </html>
